@@ -1,14 +1,13 @@
 <template>
     <div class="main">
         <div class="b__sidebar">
-            <SidebarComponent />
-            
+            <SidebarComponent /> 
         </div>
-        <div class="content-right">
-            <div class="b__navbar">
-                <NavbarComponent />
+        <div class="content-right"> 
+            <NavbarComponent /> 
+            <div class="b__apges">
+                <slot name="slot-pages"></slot>
             </div>
-            <div class="b__apges"></div>
         </div>
     </div>
 </template>

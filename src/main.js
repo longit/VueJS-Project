@@ -5,6 +5,9 @@ import VueRouter from 'vue-router'
 
 import LoginComponent from './pages/Login/LoginComponent' 
 import HomeComponent from './pages/Home/HomeComponent'
+import ProductsComponent from './pages/Products/ProductsComponent'
+import AboutsComponent from './pages/Abouts/AboutsComponent'
+import ContactComponent from './pages/Contact/ContactComponent'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'  
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -18,6 +21,9 @@ Vue.use(VueRouter)
 const routes = [
     {path: '/',  name: 'login', component: LoginComponent},
     {path: '/home',name: 'home', component: HomeComponent},
+    {path: '/products',name: 'products', component: ProductsComponent},
+    {path: '/abouts',name: 'abouts', component: AboutsComponent},
+    {path: '/contact',name: 'contact', component: ContactComponent},
 ]
 
 const router = new VueRouter ({

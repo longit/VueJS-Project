@@ -2,7 +2,7 @@
     <DashboardComponent >
         <div slot="slot-pages" class="content-pages">
             <div class="b__title--pages mb-3">
-                <h3> Home Page</h3>
+                <h3>Contact</h3>
             </div>
             <div class="b__card---rows">
                 <div class="row">
@@ -20,49 +20,21 @@
                     </div> 
                 </div>
             </div><!-- end .b__card---rows-->
-            <div class="b__list mt-4">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <ListComponent :users="users" /> 
-                    </div>
-                </div>
-            </div><!-- end .b__list--> 
         </div>
     </DashboardComponent >
 </template>
 <script>
 import DashboardComponent from '../Dashboard/DashboardComponent'
 import CardsComponent from '../../components/CardsComponent.vue'
-import ListComponent from '../../components/ListComponent.vue'
-const axios = require('axios');
 export default {
-    name: 'HomeComponent',
-    data () {
-        return {
-            users:[]
-        }
-    },
-    mounted(){
-        this.getUsers();
-    },
-    methods:{
-        async getUsers(){
-            const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-            if(response.status == 200) {
-                this.users = response.data;
-            } else {
-                console.log("Response error to API");
-            } 
-        }
-    },
+    name: 'ContactComponent',
     components: {
         DashboardComponent,
-        CardsComponent,
-        ListComponent
-    }
+        CardsComponent
+    } 
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" scr="./style.scss" scoped>
 .content-pages {
     padding: 15px;
 }

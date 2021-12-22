@@ -35,23 +35,6 @@ methods:{
 }
 }
 </script>
-<style scoped> 
-.b__login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.b__login--content {
-    width: 400px;
-    height: 500px; 
-    border-radius: 7px;
-    background: #069;  
-    padding: 30px;
-}  
-.b__login--content h3 {
-    color: #fff;
-}
-.b__login--content label {
-    color:#fff;
-}
+<style lang="scss" src="./styleLogin.scss" >
+    @import "@/scss/_color.scss";
 </style>
