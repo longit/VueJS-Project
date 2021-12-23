@@ -10,11 +10,4 @@ export default {
     components: {  
     }
 };
-</script>
-
-<style> 
-
-.router-link-active {
-    color: red;
-}
-</style>
+</script> 

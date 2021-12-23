@@ -23,7 +23,10 @@
             <div class="b__list mt-4">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <ListComponent :users="users" /> 
+                        <ListComponent :data="users" description="ListComponent" :colums="['Nome','E-mail','Contact']"  /> 
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ListComponent :data="users" description="ProductsComponent" :colums="['Name','E-mail','Product']" /> 
                     </div>
                 </div>
             </div><!-- end .b__list--> 
