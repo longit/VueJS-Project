@@ -6,20 +6,21 @@
         <div class="content-right"> 
             <NavbarComponent /> 
             <div class="b__apges">
-                <slot name="slot-pages"></slot>
-            </div>
+                <slot name="slot-pages"></slot> 
+                
+            </div> 
         </div>
     </div>
 </template>
 <script>
 import SidebarComponent from './components/SidebarComponent.vue'
-import NavbarComponent from './components/NavbarComponent.vue' 
+import NavbarComponent from './components/NavbarComponent.vue'  
 
 export default {
     name: 'DashboardComponent',
     components: {
         SidebarComponent,
-        NavbarComponent
+        NavbarComponent 
     }
 }
 </script>

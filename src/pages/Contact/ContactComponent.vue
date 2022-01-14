@@ -26,11 +26,12 @@
 <script>
 import DashboardComponent from '../Dashboard/DashboardComponent'
 import CardsComponent from '../../components/CardsComponent.vue'
+
 export default {
     name: 'ContactComponent',
     components: {
         DashboardComponent,
-        CardsComponent
+        CardsComponent 
     } 
 }
 </script>

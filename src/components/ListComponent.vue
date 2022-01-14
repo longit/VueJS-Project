@@ -7,11 +7,11 @@
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">{{ colums[0]}}</th>
-                    <th scope="col">{{ colums[1]}}</th>
-                    <th scope="col">{{ colums[2]}}</th>
-                    </tr>7
+                        <th scope="col">#</th>
+                        <th scope="col">{{ colums[0]}}</th>
+                        <th scope="col">{{ colums[1]}}</th>
+                        <th scope="col">{{ colums[2]}}</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr v-for="user in data" :key="user.id">

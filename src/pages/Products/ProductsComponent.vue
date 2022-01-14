@@ -1,19 +1,21 @@
 <template>
-    <DashboardComponent >
-        <div slot="slot-pages" class="content-pages">
-            <p> Products</p>
+    <DashboardComponent > 
+        <div slot="slot-pages" class="content-pages">  
+            <ProductListComponent />
         </div>
     </DashboardComponent >
 </template>
 <script>
 import DashboardComponent from '../Dashboard/DashboardComponent'
+import ProductListComponent from '../../components/ProductListComponent.vue'
 export default {
     name: 'ProductsComponent',
     components: {
-        DashboardComponent
-    }
+        DashboardComponent,
+        ProductListComponent
+    }, 
 }
 </script>
-<style scoped>
+<style lang="scss" scoped> 
 
 </style>
